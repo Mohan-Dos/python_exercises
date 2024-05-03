@@ -121,3 +121,37 @@ def find_num(num):
 
 num = int(input("enter a number: "))
 find_num(num)
+
+
+9.find a maximum or three numbers:
+
+def find_max(num1,num2,num3):  
+    if num1 > num2:
+        if num1 > num3:
+            print(num1," is max number")
+    elif num2 > num3:
+            print(num2," is max number")
+    else:
+        print(num3," is max number")
+    
+num1 = int(input("enter a first number: "))
+num2 = int(input("enter a second number: "))
+num3 = int(input("enter a third number: "))
+find_max(num1,num2,num3)
+
+10. find fibonacci of a number:
+
+def find_max(num1):  
+    start = 0
+    end =1
+    for i in range(0,num1+1):
+        sum = start + end
+        print(start)
+        start = end
+        end = sum
+    print("sum of total is: ",sum)
+           
+num1 = int(input("enter a first number: "))
+find_max(num1)
+           
+
