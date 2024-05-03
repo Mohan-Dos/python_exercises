@@ -255,6 +255,22 @@ O/P:
 Enter a celsius number: 4
 The fahrenheit values is:  39.2 'F
 
+17.convert to faherenhit to celsius:
+
+def find(celsius):
+    return (celsius-32)*5/9
+value = float(input("Enter a above 33'f number: "))
+if value >= 33:
+    find(value)
+    print("The celsius values is: ",find(value),"'C")
+else:
+    print("you entered wrond values")
+
+O/P:
+
+Enter a above 33'f number: 102
+The celsius values is:  38.888888888888886 'C
+
 
 
 
