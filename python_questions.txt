@@ -207,6 +207,57 @@ for i in range(1,6):
         print(j,end = "")
     print("\t")
 
+14.count the total number of digits in a number:
+CODE:
+
+def find(num):
+    count = 0
+    while num != 0:
+        num = num // 10
+        count += 1
+    return count
+
+num = int(input("enter a number: "))
+print(find(num))
+
+O/P:
+
+enter a number: 4321
+4
+
+15.calculate the power using the pow method:
+CODING:
+import math
+def find(value,power):
+    return math.pow(value,power)
+   
+value = int(input("find your value number: "))
+power = int(input("enter your raised to the power: "))
+print(find(value,power))
+
+O/P:
+
+find your value number: 3
+enter your raised to the power: 3
+27.0
+
+
+16. convert to celsius to fahrenhit:
+CODE:
+
+def find(celsius):
+    return (celsius*9/5)+32
+value = float(input("Enter a celsius number: "))
+print("The fahrenheit values is: ",find(value),"'F")
+
+O/P:
+
+Enter a celsius number: 4
+The fahrenheit values is:  39.2 'F
+
+
+
+
  
 
 
