@@ -1,3 +1,5 @@
+                      This questions for only beginner not at all
+
 1. create class and print values:
 
 class student:
