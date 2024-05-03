@@ -153,5 +153,26 @@ def find_max(num1):
            
 num1 = int(input("enter a first number: "))
 find_max(num1)
-           
+
+
+11.find number of digits and letters:
+
+def find(str):
+    letter = 0
+    digit = 0
+    for i in str:
+        if i.isalpha():
+            letter += 1
+        elif i.isdigit():
+            digit += 1
+    print("the number of letters: ",letter)
+    print("the number of digits: ",digit)
+
+str = input("enter a alphanumeric string: ")
+find(str)
+
+O/P:
+enter a alphanumeric string: mohan638361
+the number of letters:  5
+the number of digits:  6
 
