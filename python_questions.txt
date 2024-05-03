@@ -1,3 +1,6 @@
+                 This questions for only beginner not at all
+
+
 1.print given number is odd or even:
 
 def find_number(num):
