@@ -111,3 +111,41 @@ O/P:
 ente a first number: 5
 enter a second number: 7
 1
+
+6.  calculate simple interest :
+
+def find_interest(principle,rate_o_interest,time):
+    return (principle*rate_o_interest*time)/100
+
+num1 = int(input("enter your amount: "))
+num2 = int(input("enter your interest rate: "))
+num3 = int(input("enter your time peried: "))
+print(find_interest(num1,num2,num3))
+
+O/P:
+
+enter your amount: 1000
+enter your interest rate: 2
+enter your time peried: 2
+40.0
+
+
+7. add two numbers using recursion:
+
+def add_num(num1,num2):
+    if num2 == 0:
+        return num1
+    else:
+        return add_num(num1+1,num2-1)
+
+
+num1 = int(input("enter first number: "))
+num2 = int(input("enter second number: "))
+result = add_num(num1,num2)
+print("the sum of number value is :",result)
+
+O/P:
+
+enter first number: 5
+enter second number: 7
+the sum of number value is : 12
