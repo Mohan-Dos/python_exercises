@@ -1,0 +1,81 @@
+1. create class and print values:
+
+class student:
+    def __init__ (self,name,age,grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+    def display_val(self,obj):
+        print(obj.name)
+        print(obj.age)
+        print(obj.grade)
+
+student1 = student("rohan",20,"A+")
+student1.display_val(student1)
+
+O/P:
+
+rohan
+20
+A+
+
+2. create valid empty class by name students, with no properties;
+
+class students:
+         pass
+
+3. create a child class teacher that will inherit the properties of parent class staff:
+
+class staf:
+    def __init__ (self,name,age):
+        self.name = name
+        self.age = age
+    
+class teacher(staf):
+    def __init__ (self,name,age,position):
+        super().__init__(name,age)
+        self.position = position
+
+    def display_val(self):
+        print(self.name)
+        print(self.age)
+        print(self.position)
+
+
+teacher1 = teacher("malar",45,"tamil teacher")
+teacher1.display_val()
+    
+O/P:
+
+malar
+45
+tamil teacher
+
+4. create 
+
+class teacher:
+    def __init__ (self,name,age):
+        self.name = name
+        self.age = age
+        self._salary = None
+    
+
+    def set_val(self,salary):
+        self.salary = salary
+        
+    def get_val(self):
+        print(self.salary)
+
+teacher1 = teacher("malar",45)
+teacher1.set_val(20000)
+print(teacher1.name)
+print(teacher1.age)
+print(teacher1.get_val())
+
+    
+O/P:
+
+malar
+45
+20000
+
