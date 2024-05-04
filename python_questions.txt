@@ -95,14 +95,10 @@ find_num(num)
 7.check given string are anagram or not:
 
 def find_num(str1,str2):
-    count =0
-    for i in str1:
-        if i in str2:
-            count +=1
-            if len(str1)== count:
-                print(str1,str2," is anagram string")
-        else:
-            print(str1,str2," is not anagram string")
+    if sorted(str1) == sorted(str2):
+        print("the both strings are anagram")
+    else:
+        print(str1,str2," is not anagram string")
         
 str1 = input("enter a string: ")
 str2 = input("rnter a string: ")
