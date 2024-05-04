@@ -271,6 +271,64 @@ O/P:
 Enter a above 33'f number: 102
 The celsius values is:  38.888888888888886 'C
 
+18. find top two maximum number in array:
+
+array = [4,5,3,9,7,8,12,13,14,8]
+max = array[0]
+for i in array:
+    if i > max:
+        max = i
+array.sort()
+l = len(array)
+print("the first max number is ",max)
+print("the second max number is ",array[l-2])
+
+             2nt method    
+
+sorted_array = sorted(array,reverse = True)
+print(sorted_array[0:2])
+
+O/P:
+
+the first max number is  14
+the second max number is  13
+[14, 13]
+
+
+19. find duplicate values in array:
+
+def remove_duplicate(list):
+    lis = []
+    for i in list:
+        if i not in lis:
+            lis.append(i)
+    return lis
+
+list = [2,4,3,5,3,2,8,8,4,9,3,4]
+print(remove_duplicate(list))
+
+O/P:
+
+[2, 4, 3, 5, 8, 9]
+
+20. print duplicate values in array:
+
+def remove_duplicate(list):
+    lis = []
+    for i in list:
+        if list.count(i) > 1 and i not in lis:
+            lis.append(i)
+    return lis
+
+list = [2,4,3,5,3,2,8,8,4,9,3,4]
+print(remove_duplicate(list))
+
+O/P:
+
+[2, 4, 3, 8]
+
+
+
 
 
 
