@@ -108,7 +108,6 @@ str1 = input("enter a string: ")
 str2 = input("rnter a string: ")
 find_num(str1,str2)
 
-
 8.find factorial of a number:
 
 def find_num(num):
