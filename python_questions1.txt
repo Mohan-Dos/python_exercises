@@ -149,3 +149,28 @@ O/P:
 enter first number: 5
 enter second number: 7
 the sum of number value is : 12
+
+8.find GCD and HCF of two numbers:
+
+def find(num1,num2):
+    lis = []
+    for i in range(1,min(num1,num2)+1):
+        if num1%i == 0 and num2%i == 0:
+            gcd = i
+            if i not in lis:
+                lis.append(i)
+
+    return gcd,lis
+
+num1 = int(input("enter first number: "))
+num2 = int(input("enter seond number: "))
+gcd,hcf = find(num1,num2)
+print("The greatest common diviser is: ",gcd)
+print("The HCF numbers is: ",hcf)
+
+O/P:
+
+enter first number: 36
+enter seond number: 60
+The greatest common diviser is:  12
+The HCF numbers is:  [1, 2, 3, 4, 6, 12]
