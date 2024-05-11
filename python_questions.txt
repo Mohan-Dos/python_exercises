@@ -325,6 +325,27 @@ O/P:
 
 [2, 4, 3, 8]
 
+21. find number of each charecters in string:
+
+str = input("enter a string: ")
+dic = {}
+for i in str:
+    if i not in dic:
+      dic.update({i:str.count(i)})
+for j,k in dic.items():
+    print(j,k)
+
+O/P:
+enter a string: abcdabcdefhg
+a 2
+b 2
+c 2
+d 2
+e 1
+f 1
+h 1
+g 1
+
 
 
 
